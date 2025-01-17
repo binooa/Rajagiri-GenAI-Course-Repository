@@ -28,6 +28,7 @@ embeddings = output.last_hidden_state
 
 # Step 5: Display results
 print("Input Text:", input_text)
+print("Original Tokens:", input_text.split())
 print("Tokenized Input IDs:", encoded_input['input_ids'])
 print("Tokenized Tokens:", tokenizer.convert_ids_to_tokens(encoded_input['input_ids'][0]))
 print("Embeddings Shape:", embeddings.shape)
